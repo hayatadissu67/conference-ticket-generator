@@ -6,6 +6,9 @@
 <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Conference ticket generator</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,18 +18,26 @@
   </style>
 </head>
 <body class="h-screen w-full bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-desktop.png')] bg-no-repeat   bg-[length:100px_auto,600px_auto,450px_auto,cover,cover] bg-[position:left_500px_top_400px,bottom_left,right_0_top_30px,center,center]
- text-white">
+ text-white font-[Inconsolata]">
 
   <!-- Form starts -->
   
 <div class=" h-screen w-full">
-  Your Journey to Coding Conf 2025 Starts Here!
+  <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo" class="mx-auto mt-10">
+  <div class="mx-auto mt-10 w-[80%] lg:w-[50%] flex flex-col gap-5 text-center">
+ <h1 class="text-bold text-[50px] lg:px-[40px] px-[20px] font-black">Your Journey to Coding Conf 2025 Starts Here!</h1>
 
-  Secure your spot at next year's biggest coding conference.
+ <h2 class="text-gray-400 text-[20px] font-semi-bold"> Secure your spot at next year's biggest coding conference.</h2>
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
+ <label class="block text-left pl-20">Upload Avatar</label>
+   <label class="block w-[400px] h-[110px] border-2 border-dashed border-gray-400 rounded-lg cursor-pointer flex flex-col items-center justify-center text-gray-400 hover:border-gray-600 hover:text-gray-600 lg:ml-[150px] ml-[80px] bg-white/10">
+    <input type="file" class="hidden" accept=".jpg,.jpeg,.png">
+    <div class="mb-2 p-2 rounded-lg bg-white/10"><img src="./assets/images/icon-upload.svg" alt="Placeholder Image" class="w-full h-full object-cover"></div>
+ <p> Drag and drop or click to upload</p>
+  </label>
+  <p class="text-gray-400 text-[12px] lg:ml-[150px] ml-[80px]  flex items-center">
+    <img src="assets/images/icon-info.svg" alt="Info Icon" class="inline-block w-4 h-4 mr-2">
+  Upload your photo (JPG or PNG, max size: 500KB).</p>
 
   Full Name
 
@@ -48,7 +59,7 @@
 
   Coding Conf
   Jan 31, 2025 / Austin, TX
-
+  </div>
   <!-- Generated tickets ends -->
   
   <footer class="attribution">
