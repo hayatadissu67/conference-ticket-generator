@@ -31,23 +31,25 @@
       }
     </style>
   </head>
-  <body
-   class="
+  <body>
+    <section
+   class=" hidden
   min-h-screen w-full
 
   bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-mobile.png')]
 
   bg-no-repeat
 
-  bg-[length:100px_auto,500px_auto,500px_auto,cover,cover]
+  bg-[length:100px_auto,500px_auto,300px_auto,cover,cover]
 
-  bg-[position:left_600px_top_500px,bottom_left,right_0_top_30px,center,center]
+  bg-[position:left_600px_top_500px,left_0_top_600px,right_0_top_10px,center,center]
 
   lg:bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-desktop.png')]
+  lg:min-h-screen 
 
-  lg:bg-[length:100px_auto,600px_auto,450px_auto,cover,cover]
+  lg:bg-[length:200px_auto,600px_auto,450px_auto,cover,cover]
 
-  lg:bg-[position:left_500px_top_400px,bottom_left,right_0_top_30px,center,center]
+  lg:bg-[position:left_900px_top_500px,left_0_top_600px,right_0_top_30px,center,center]
 
   text-white font-[Inconsolata]
 "
@@ -55,7 +57,7 @@
   >
     <!-- Form starts -->
 
-    <div class="h-screen w-full">
+    <div class=" w-full">
       <img
         src="./assets/images/logo-full.svg"
         alt="Coding Conf Logo"
@@ -97,29 +99,93 @@
           Upload your photo (JPG or PNG, max size: 500KB).
         </p>
 
-        <label class="block text-left pl-20">Full Name</label>
+        <label class="block text-left pl-20 lg:ml-[80px] ">Full Name</label>
         <input
           type="text"
           placeholder=""
           class="w-[400px] h-[50px] rounded-lg px-4 py-2 text-black lg:ml-[150px] ml-[80px] bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
         />
-        <label class="block text-left pl-20">Email Address </label> <input
+        <label class="block text-left pl-20 lg:ml-[80px] ">Email Address</label> <input
          type="email"
-         placeholder="example@email.com"> GitHub Username @yourusername
-        Generate My Ticket
-
+         placeholder="example@email.com"
+         class="w-[400px] h-[50px] rounded-lg px-4 py-2 text-black lg:ml-[150px] ml-[80px] bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
+        />
+        <label class="block text-left pl-20 lg:ml-[80px] ">GitHub Username</label>
+        <input
+          type="text"
+          placeholder="@yourusername"
+          class="w-[400px] h-[50px] rounded-lg px-4 py-2 text-black lg:ml-[150px] ml-[80px] bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
+        />
+        <button
+          class="w-[400px] h-[50px] rounded-lg bg-orange-700 text-white font-bold hover:bg-orange-600 lg:ml-[150px] ml-[80px]"
+        >
+          Generate My Ticket
+        </button>
+</div>
+</div>
+    </section>
         <!-- Form ends -->
 
         <!-- Generated tickets starts -->
+<section  class="
+  min-h-screen w-full
 
-        Congrats,
-        <!-- Full Name -->! Your ticket is ready. We've emailed your ticket to
-        <!-- Email Address -->
-        and will send updates in the run up to the event. Coding Conf Jan 31,
-        2025 / Austin, TX
+  bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-mobile.png')]
+
+  bg-no-repeat
+
+  bg-[length:100px_auto,500px_auto,300px_auto,cover,cover]
+
+  bg-[position:left_600px_top_500px,left_0_top_600px,right_0_top_10px,center,center]
+
+  lg:bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-desktop.png')]
+  lg:min-h-screen 
+
+  lg:bg-[length:200px_auto,600px_auto,450px_auto,cover,cover]
+
+  lg:bg-[position:left_900px_top_500px,left_0_top_600px,right_0_top_30px,center,center]
+
+  text-white font-[Inconsolata]
+"
+>
+<div class=" flex gap-0 mx-auto mt-10 w-[80%] lg:w-[50%] flex flex-col gap-5 text-center">
+<img
+        src="./assets/images/logo-full.svg"
+        alt="Coding Conf Logo"
+        class="mx-auto mt-10"
+      />
+       <h1 class="text-[45px] lg:px-[40px] px-[50px] font-black font-bold">Congrats,
+        <span class="font-bold bg-gradient-to-r from-[hsl(7,86%,67%)] to-[hsl(0,0%,100%)] bg-clip-text text-transparent"> Full Name</span> ! Your ticket is ready.</h1> 
+        <p class="text-lg">We've emailed your ticket to</p>
+       <p class="text-lg px-[90px]"> <span class="font-bold text-orange-500"> Email Address </span>
+        and will send updates in the run up to the event.</p>
+      <div class="
+  relative
+  bg-[url('./assets/images/pattern-ticket.svg')]
+  bg-no-repeat
+  bg-[length:100%_100%]
+  bg-center
+  h-[300px] w-[450px]
+  mx-auto mt-0
+">
+
+  <!-- Logo -->
+  <img
+    src="./assets/images/logo-full.svg"
+    class="absolute top-[60px] left-5 w-46"
+    alt="Coding Conf Logo"
+  />
+
+  <!-- Event Date -->
+  <p class="absolute top-[90px] left-[70px] text-sm text-white">
+    Jan 31, 2025 / Austin, TX
+  </p>
+
+</div>
+        
       </div>
       <!-- Generated tickets ends -->
-
+</section>
       <footer class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
