@@ -1,71 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Conference ticket generator</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body class="h-screen w-full bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-desktop.png')] bg-no-repeat   bg-[length:100px_auto,600px_auto,450px_auto,cover,cover] bg-[position:left_500px_top_400px,bottom_left,right_0_top_30px,center,center]
- text-white font-[Inconsolata]">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Conference ticket generator</title>
 
-  <!-- Form starts -->
-  
-<div class=" h-screen w-full">
-  <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo" class="mx-auto mt-10">
-  <div class="mx-auto mt-10 w-[80%] lg:w-[50%] flex flex-col gap-5 text-center">
- <h1 class="text-bold text-[50px] lg:px-[40px] px-[20px] font-black">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+   class="
+  min-h-screen w-full
 
- <h2 class="text-gray-400 text-[20px] font-semi-bold"> Secure your spot at next year's biggest coding conference.</h2>
+  bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-mobile.png')]
 
- <label class="block text-left pl-20">Upload Avatar</label>
-   <label class="block w-[400px] h-[110px] border-2 border-dashed border-gray-400 rounded-lg cursor-pointer flex flex-col items-center justify-center text-gray-400 hover:border-gray-600 hover:text-gray-600 lg:ml-[150px] ml-[80px] bg-white/10">
-    <input type="file" class="hidden" accept=".jpg,.jpeg,.png">
-    <div class="mb-2 p-2 rounded-lg bg-white/10"><img src="./assets/images/icon-upload.svg" alt="Placeholder Image" class="w-full h-full object-cover"></div>
- <p> Drag and drop or click to upload</p>
-  </label>
-  <p class="text-gray-400 text-[12px] lg:ml-[150px] ml-[80px]  flex items-center">
-    <img src="assets/images/icon-info.svg" alt="Info Icon" class="inline-block w-4 h-4 mr-2">
-  Upload your photo (JPG or PNG, max size: 500KB).</p>
+  bg-no-repeat
 
-  Full Name
+  bg-[length:100px_auto,500px_auto,500px_auto,cover,cover]
 
-  Email Address
-  example@email.com
+  bg-[position:left_600px_top_500px,bottom_left,right_0_top_30px,center,center]
 
-  GitHub Username
-  @yourusername
+  lg:bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-desktop.png')]
 
-  Generate My Ticket
+  lg:bg-[length:100px_auto,600px_auto,450px_auto,cover,cover]
 
-  <!-- Form ends -->
+  lg:bg-[position:left_500px_top_400px,bottom_left,right_0_top_30px,center,center]
 
-  <!-- Generated tickets starts -->
+  text-white font-[Inconsolata]
+"
 
-  Congrats, <!-- Full Name -->! Your ticket is ready.
+  >
+    <!-- Form starts -->
 
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
+    <div class="h-screen w-full">
+      <img
+        src="./assets/images/logo-full.svg"
+        alt="Coding Conf Logo"
+        class="mx-auto mt-10"
+      />
+      <div
+        class="mx-auto mt-10 w-[80%] lg:w-[50%] flex flex-col gap-5 text-center"
+      >
+        <h1 class="text-bold text-[50px] lg:px-[40px] px-[20px] font-black">
+          Your Journey to Coding Conf 2025 Starts Here!
+        </h1>
 
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-  </div>
-  <!-- Generated tickets ends -->
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-  </div>
-</body>
+        <h2 class="text-gray-400 text-[20px] font-semi-bold">
+          Secure your spot at next year's biggest coding conference.
+        </h2>
+
+        <label class="block text-left pl-20">Upload Avatar</label>
+        <label
+          class="block w-[400px] h-[110px] border-2 border-dashed border-gray-400 rounded-lg cursor-pointer flex flex-col items-center justify-center text-gray-400 hover:border-gray-600 hover:text-gray-600 lg:ml-[150px] ml-[80px] bg-white/10"
+        >
+          <input type="file" class="hidden" accept=".jpg,.jpeg,.png" />
+          <div class="mb-2 p-2 rounded-lg bg-white/10">
+            <img
+              src="./assets/images/icon-upload.svg"
+              alt="Placeholder Image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <p>Drag and drop or click to upload</p>
+        </label>
+        <p
+          class="text-gray-400 text-[12px] lg:ml-[150px] ml-[80px] flex items-center"
+        >
+          <img
+            src="assets/images/icon-info.svg"
+            alt="Info Icon"
+            class="inline-block w-4 h-4 mr-2"
+          />
+          Upload your photo (JPG or PNG, max size: 500KB).
+        </p>
+
+        <label class="block text-left pl-20">Full Name</label>
+        <input
+          type="text"
+          placeholder=""
+          class="w-[400px] h-[50px] rounded-lg px-4 py-2 text-black lg:ml-[150px] ml-[80px] bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
+        />
+        <label class="block text-left pl-20">Email Address </label> <input
+         type="email"
+         placeholder="example@email.com"> GitHub Username @yourusername
+        Generate My Ticket
+
+        <!-- Form ends -->
+
+        <!-- Generated tickets starts -->
+
+        Congrats,
+        <!-- Full Name -->! Your ticket is ready. We've emailed your ticket to
+        <!-- Email Address -->
+        and will send updates in the run up to the event. Coding Conf Jan 31,
+        2025 / Austin, TX
+      </div>
+      <!-- Generated tickets ends -->
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </footer>
+    </div>
+  </body>
 </html>
