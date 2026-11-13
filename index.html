@@ -35,21 +35,21 @@
     <section
    class=" hidden
   min-h-screen w-full
-
+ p-10
   bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-mobile.png')]
 
   bg-no-repeat
 
   bg-[length:100px_auto,500px_auto,300px_auto,cover,cover]
 
-  bg-[position:left_600px_top_500px,left_0_top_600px,right_0_top_10px,center,center]
+  bg-[position:left_600px_top_500px,left_0_top_900px,right_0_top_10px,center,center]
 
   lg:bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-desktop.png')]
   lg:min-h-screen 
 
   lg:bg-[length:200px_auto,600px_auto,450px_auto,cover,cover]
 
-  lg:bg-[position:left_900px_top_500px,left_0_top_600px,right_0_top_30px,center,center]
+  lg:bg-[position:left_900px_top_500px,left_0_top_750px,right_0_top_30px,center,center]
 
   text-white font-[Inconsolata]
 "
@@ -57,16 +57,16 @@
   >
     <!-- Form starts -->
 
-    <div class=" w-full">
+    <div class=" lg:w-full">
       <img
         src="./assets/images/logo-full.svg"
         alt="Coding Conf Logo"
         class="mx-auto mt-10"
       />
       <div
-        class="mx-auto mt-10 w-[80%] lg:w-[50%] flex flex-col gap-5 text-center"
+        class="mx-auto mt-10 w-[95%] sm:w-[80%] lg:w-[50%] flex flex-col gap-5 text-center"
       >
-        <h1 class="text-bold text-[50px] lg:px-[40px] px-[20px] font-black">
+        <h1 class="text-bold text-[32px] sm:text-[40px] lg:px-[40px] px-2 font-black">
           Your Journey to Coding Conf 2025 Starts Here!
         </h1>
 
@@ -74,9 +74,9 @@
           Secure your spot at next year's biggest coding conference.
         </h2>
 
-        <label class="block text-left pl-20">Upload Avatar</label>
+        <label class="block text-left  w-full max-w-[400px] mx-auto">Upload Avatar</label>
         <label
-          class="block w-[400px] h-[110px] border-2 border-dashed border-gray-400 rounded-lg cursor-pointer flex flex-col items-center justify-center text-gray-400 hover:border-gray-600 hover:text-gray-600 lg:ml-[150px] ml-[80px] bg-white/10"
+          class="block w-full max-w-[400px] h-[110px] mx-auto border-2 border-dashed border-gray-400 rounded-lg cursor-pointer flex flex-col items-center justify-center text-gray-400 hover:border-gray-600 hover:text-gray-600 bg-white/10"
         >
           <input type="file" class="hidden" accept=".jpg,.jpeg,.png" />
           <div class="mb-2 p-2 rounded-lg bg-white/10">
@@ -89,7 +89,7 @@
           <p>Drag and drop or click to upload</p>
         </label>
         <p
-          class="text-gray-400 text-[12px] lg:ml-[150px] ml-[80px] flex items-center"
+          class="text-gray-400 text-[11px] sm:text-[12px] w-full max-w-[400px] mx-auto flex items-center justify-center"
         >
           <img
             src="assets/images/icon-info.svg"
@@ -99,25 +99,25 @@
           Upload your photo (JPG or PNG, max size: 500KB).
         </p>
 
-        <label class="block text-left pl-20 lg:ml-[80px] ">Full Name</label>
+        <label class="block text-left  w-full max-w-[400px] mx-auto">Full Name</label>
         <input
           type="text"
           placeholder=""
-          class="w-[400px] h-[50px] rounded-lg px-4 py-2 text-black lg:ml-[150px] ml-[80px] bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
+          class="w-full max-w-[400px] h-[50px] rounded-lg px-4 py-2 text-black mx-auto bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
         />
-        <label class="block text-left pl-20 lg:ml-[80px] ">Email Address</label> <input
+        <label class="block text-left  w-full max-w-[400px] mx-auto">Email Address</label> <input
          type="email"
          placeholder="example@email.com"
-         class="w-[400px] h-[50px] rounded-lg px-4 py-2 text-black lg:ml-[150px] ml-[80px] bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
+         class="w-full max-w-[400px] h-[50px] rounded-lg px-4 py-2 text-black mx-auto bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
         />
-        <label class="block text-left pl-20 lg:ml-[80px] ">GitHub Username</label>
+        <label class="block text-left  w-full max-w-[400px] mx-auto">GitHub Username</label>
         <input
           type="text"
           placeholder="@yourusername"
-          class="w-[400px] h-[50px] rounded-lg px-4 py-2 text-black lg:ml-[150px] ml-[80px] bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
+          class="w-full max-w-[400px] h-[50px] rounded-lg px-4 py-2 text-black mx-auto bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
         />
         <button
-          class="w-[400px] h-[50px] rounded-lg bg-orange-700 text-white font-bold hover:bg-orange-600 lg:ml-[150px] ml-[80px]"
+          class="w-full max-w-[400px] h-[50px] rounded-lg bg-orange-700 text-white font-bold hover:bg-orange-600 mx-auto"
         >
           Generate My Ticket
         </button>
@@ -127,7 +127,7 @@
         <!-- Form ends -->
 
         <!-- Generated tickets starts -->
-<section  class="
+<section  class=" 
   min-h-screen w-full
 
   bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-mobile.png')]
@@ -136,28 +136,28 @@
 
   bg-[length:100px_auto,500px_auto,300px_auto,cover,cover]
 
-  bg-[position:left_600px_top_500px,left_0_top_600px,right_0_top_10px,center,center]
+  bg-[position:left_600px_top_500px,left_0_top_900px,right_0_top_10px,center,center]
 
   lg:bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-desktop.png')]
   lg:min-h-screen 
 
   lg:bg-[length:200px_auto,600px_auto,450px_auto,cover,cover]
 
-  lg:bg-[position:left_900px_top_500px,left_0_top_600px,right_0_top_30px,center,center]
+  lg:bg-[position:left_900px_top_500px,left_0_top_750px,right_0_top_30px,center,center]
 
   text-white font-[Inconsolata]
 "
 >
-<div class=" flex gap-0 mx-auto mt-10 w-[80%] lg:w-[50%] flex flex-col gap-5 text-center">
+<div class="flex gap-0 mx-auto mt-10 w-[95%] sm:w-[80%] lg:w-[50%] flex-col gap-5 text-center">
 <img
         src="./assets/images/logo-full.svg"
         alt="Coding Conf Logo"
         class="mx-auto mt-10"
       />
-       <h1 class="text-[45px] lg:px-[40px] px-[50px] font-black font-bold">Congrats,
+       <h1 class="text-[30px] sm:text-[38px] lg:text-[45px] px-2 lg:px-[40px] font-black font-bold">Congrats,
         <span class="font-bold bg-gradient-to-r from-[hsl(7,86%,67%)] to-[hsl(0,0%,100%)] bg-clip-text text-transparent"> Full Name</span> ! Your ticket is ready.</h1> 
         <p class="text-lg">We've emailed your ticket to</p>
-       <p class="text-lg px-[90px]"> <span class="font-bold text-orange-500"> Email Address </span>
+       <p class="text-lg px-3 sm:px-8 lg:px-[90px]"> <span class="font-bold text-orange-500"> Email Address </span>
         and will send updates in the run up to the event.</p>
       <div class="
   relative
@@ -165,23 +165,47 @@
   bg-no-repeat
   bg-[length:100%_100%]
   bg-center
-  h-[300px] w-[450px]
-  mx-auto mt-0
+ h-[200px] sm:h-[260px] lg:h-[300px] w-full max-w-[450px]
+  mx-auto mt-0 flex
 ">
 
   <!-- Logo -->
   <img
     src="./assets/images/logo-full.svg"
-    class="absolute top-[60px] left-5 w-46"
+    class="absolute top-[35px] sm:top-[50px] lg:top-[60px] left-3 sm:left-5 w-32 sm:w-40 lg:w-46 ml-3 sm:ml-5"
     alt="Coding Conf Logo"
   />
 
   <!-- Event Date -->
-  <p class="absolute top-[90px] left-[70px] text-sm text-white">
+  <p class="absolute top-[65px] sm:top-[80px] lg:top-[90px] left-[55px] sm:left-[70px] text-xs sm:text-sm text-white">
     Jan 31, 2025 / Austin, TX
   </p>
-
+  <div class="flex flex-row ">
+       <img
+      src="./assets/images/image-avatar.jpg"
+      alt="Download Icon"
+      class="w-[55px] h-[55px] sm:w-[75px] sm:h-[75px] lg:w-[90px] lg:h-[90px] mt-[110px] sm:mt-[140px] lg:mt-[150px] ml-[30px] sm:ml-5 rounded-[10px]"
+    />
+    <div class="flex flex-col text-white-400 text-bold ">
+    <span class="pt-[125px] sm:pt-[155px] lg:pt-[170px] text-sm sm:text-base"> Jonatan Kristof</span>
+    <span class="flex flex-row pt-[5px] pl-[0px]">
+      <img
+        src="./assets/images/icon-github.svg"
+        alt="Download Icon"
+        class=" w-[20px] h-[20px]  ml-[5px] mt-[5px]"
+      />
+      <p class="pl-[5px]">oit8roiyeoryo8ty</p>
+    </span>
+    </div>
+    </div>
+    <p class="[writing-mode:vertical-rl] ml-auto lg:mr-6 mr-8 mt-[20px] lg:mt-[40px] lg:mt-[150px] text-gray-400 text-lg">
+    ticket number
+</p>
 </div>
+
+    
+
+
         
       </div>
       <!-- Generated tickets ends -->
