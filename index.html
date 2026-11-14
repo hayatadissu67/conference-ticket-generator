@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+   <script src="ticket.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +33,8 @@
   </head>
   <body>
     <section
-   class=" hidden
+    id="formsection"
+   class="
   min-h-screen w-full
  p-10
   bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-mobile.png')]
@@ -74,11 +75,11 @@
           Secure your spot at next year's biggest coding conference.
         </h2>
 
-        <label class="block text-left  w-full max-w-[400px] mx-auto">Upload Avatar</label>
+        <label  class="block text-left  w-full max-w-[400px] mx-auto">Upload Avatar</label>
         <label
           class="block w-full max-w-[400px] h-[110px] mx-auto border-2 border-dashed border-gray-400 rounded-lg cursor-pointer flex flex-col items-center justify-center text-gray-400 hover:border-gray-600 hover:text-gray-600 bg-white/10"
         >
-          <input type="file" class="hidden" accept=".jpg,.jpeg,.png" />
+          <input id="avatar" type="file" class="hidden" accept=".jpg,.jpeg,.png" />
           <div class="mb-2 p-2 rounded-lg bg-white/10">
             <img
               src="./assets/images/icon-upload.svg"
@@ -101,23 +102,28 @@
 
         <label class="block text-left  w-full max-w-[400px] mx-auto">Full Name</label>
         <input
+        id="name"
           type="text"
           placeholder=""
           class="w-full max-w-[400px] h-[50px] rounded-lg px-4 py-2 text-black mx-auto bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
         />
-        <label class="block text-left  w-full max-w-[400px] mx-auto">Email Address</label> <input
+        <label class="block text-left  w-full max-w-[400px] mx-auto">Email Address</label> 
+        <input
+         id="email"
          type="email"
          placeholder="example@email.com"
          class="w-full max-w-[400px] h-[50px] rounded-lg px-4 py-2 text-black mx-auto bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
         />
         <label class="block text-left  w-full max-w-[400px] mx-auto">GitHub Username</label>
         <input
+          id="github"
           type="text"
           placeholder="@yourusername"
           class="w-full max-w-[400px] h-[50px] rounded-lg px-4 py-2 text-black mx-auto bg-white/10 border-2 border-dashed focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-400 hover:border-gray-600 hover:text-gray-600"
         />
         <button
           class="w-full max-w-[400px] h-[50px] rounded-lg bg-orange-700 text-white font-bold hover:bg-orange-600 mx-auto"
+          id="generateTicket"
         >
           Generate My Ticket
         </button>
@@ -127,7 +133,8 @@
         <!-- Form ends -->
 
         <!-- Generated tickets starts -->
-<section  class=" 
+<section id="ticketsection"
+ class="  hidden
   min-h-screen w-full
 
   bg-[url('./assets/images/pattern-circle.svg'),url('./assets/images/pattern-squiggly-line-bottom-desktop.svg'),url('./assets/images/pattern-squiggly-line-top.svg'),url('./assets/images/pattern-lines.svg'),url('./assets/images/background-mobile.png')]
@@ -155,9 +162,9 @@
         class="mx-auto mt-10"
       />
        <h1 class="text-[30px] sm:text-[38px] lg:text-[45px] px-2 lg:px-[40px] font-black font-bold">Congrats,
-        <span class="font-bold bg-gradient-to-r from-[hsl(7,86%,67%)] to-[hsl(0,0%,100%)] bg-clip-text text-transparent"> Full Name</span> ! Your ticket is ready.</h1> 
+        <span id="nameDisplay" class="font-bold bg-gradient-to-r from-[hsl(7,86%,67%)] to-[hsl(0,0%,100%)] bg-clip-text text-transparent"> Full Name</span> ! Your ticket is ready.</h1> 
         <p class="text-lg">We've emailed your ticket to</p>
-       <p class="text-lg px-3 sm:px-8 lg:px-[90px]"> <span class="font-bold text-orange-500"> Email Address </span>
+       <p class="text-lg px-3 sm:px-8 lg:px-[90px]"> <span class="font-bold text-orange-500" id="emailDisplay"> Email Address </span>
         and will send updates in the run up to the event.</p>
       <div class="
   relative
@@ -182,23 +189,24 @@
   </p>
   <div class="flex flex-row ">
        <img
+       id="avatarDisplay"
       src="./assets/images/image-avatar.jpg"
       alt="Download Icon"
       class="w-[55px] h-[55px] sm:w-[75px] sm:h-[75px] lg:w-[90px] lg:h-[90px] mt-[110px] sm:mt-[140px] lg:mt-[150px] ml-[30px] sm:ml-5 rounded-[10px]"
     />
     <div class="flex flex-col text-white-400 text-bold ">
-    <span class="pt-[125px] sm:pt-[155px] lg:pt-[170px] text-sm sm:text-base"> Jonatan Kristof</span>
-    <span class="flex flex-row pt-[5px] pl-[0px]">
+    <span id="nameDisplay2" class="pt-[125px] sm:pt-[155px] lg:pt-[170px] text-sm sm:text-base"> Jonatan Kristof</span>
+    <span class="flex flex-row pt-[2px] pl-[0px]">
       <img
         src="./assets/images/icon-github.svg"
         alt="Download Icon"
-        class=" w-[20px] h-[20px]  ml-[5px] mt-[5px]"
+        class=" w-[20px] h-[20px]  ml-[5px] mt-[2px]"
       />
-      <p class="pl-[5px]">oit8roiyeoryo8ty</p>
+      <p id="githubDisplay" class="pl-[5px]">oit8roiyeoryo8ty</p>
     </span>
     </div>
     </div>
-    <p class="[writing-mode:vertical-rl] ml-auto lg:mr-6 mr-8 mt-[20px] lg:mt-[40px] lg:mt-[150px] text-gray-400 text-lg">
+    <p id="ticketNumber" class="[writing-mode:vertical-rl] ml-auto lg:mr-6 mr-8 mt-[20px] lg:mt-[40px] lg:mt-[150px] text-gray-400 text-lg">
     ticket number
 </p>
 </div>
@@ -213,7 +221,7 @@
       <footer class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">hayat</a>.
       </footer>
     </div>
   </body>
