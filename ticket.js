@@ -11,6 +11,13 @@ const emailDisplay = document.getElementById("emailDisplay");
 const githubDisplay = document.getElementById("githubDisplay");
 const avatarDisplay = document.getElementById("avatarDisplay");
 const ticketNumberDisplay = document.getElementById("ticketNumber");
+const avatarPreview = document.getElementById("avatarPreview");
+
+avatarInput.addEventListener("change", function () {
+  if (avatarInput.files[0]) {
+    avatarPreview.src = URL.createObjectURL(avatarInput.files[0]);
+  }
+});
 
 
 generateTicketButton.addEventListener("click", function () {
@@ -23,6 +30,28 @@ generateTicketButton.addEventListener("click", function () {
     alert("Please fill in all fields and select an avatar image.");
     return;
   }
+
+  if (!emailInput.checkValidity()) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+  if (!githubUsername.startsWith("@")) {
+    alert("Please enter a valid GitHub username.");
+    return;
+  }
+   const allowedExtensions = [".jpg", ".jpeg", ".png", ".gif"];
+   const fileExtension = avatarInput.files[0].name
+     .slice(avatarInput.files[0].name.lastIndexOf("."))
+     .toLowerCase();
+   if (!allowedExtensions.includes(fileExtension)) {
+    alert("Please select a valid image file (jpg, jpeg, png, gif).");
+    return;
+  }
+
+  if (avatarInput.files[0].size > 2 * 1024 * 1024) {
+    alert("Please select an image file smaller than 2MB.");
+    return;
+  } 
 
     if (fullName && email && githubUsername && avatarUrl) { 
       nameDisplay.textContent = fullName;
